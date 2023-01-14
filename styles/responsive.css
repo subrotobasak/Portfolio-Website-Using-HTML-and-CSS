@@ -1,0 +1,137 @@
+/* Responsive CSS for All Devices*/
+
+
+@media (max-width: 991px) {
+
+    .container {
+        padding: 0 10%;
+    }
+
+    /* Header Area CSS */
+    .header-content {
+        grid-template-areas:
+            "l i"
+            "m m";
+
+    }
+
+    .logo {
+        grid-area: l;
+    }
+
+    .nav-menu {
+        grid-area: m;
+        text-align: center;
+        background-color: #3a2b71;
+        margin-top: 10px;
+        padding: 15px 0;
+        display: none;
+    }
+
+    .nav-menu.show-menu {
+        display: block;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px 0;
+        margin-left: 0;
+    }
+
+
+    .menu-icon {
+        display: block;
+        grid-area: i;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    /* Hero Area CSS*/
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+        color: #ffffff;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    /* About Area */
+    .about-contetn {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .about-image {
+        order: -1;
+
+    }
+
+    .about-image img {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    /* Service Area CSS */
+    .service-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-service {
+        text-align: center;
+
+    }
+
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 575px) {
+
+    /* Header Area */
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+
+    /* Section-heading */
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    /* Contact Area CSS */
+    .conatct-contact form {
+        display: grid;
+        grid-template-areas:
+            "f f"
+            "l l"
+            "e e"
+            "p p"
+            "m m"
+            "s s";
+    }
+
+}

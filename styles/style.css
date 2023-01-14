@@ -1,0 +1,307 @@
+/* Google Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&family=Open+Sans:wght@400;500&family=Roboto:wght@700;900&display=swap');
+
+/* Base CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bebbc7;
+    background-image: url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+a {
+    font-weight: 500px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Basic CSS */
+.container {
+    padding: 0 15%;
+}
+
+a.theme-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00c0ff;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+a.theme-button:hover {
+    background-color: #ffffff;
+    color: #00c0ff;
+}
+
+a.theme-button-small {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00c0ff;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+a.theme-button-small:hover {
+    background-color: #ffffff;
+    color: #00c0ff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.section-heading h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00c0ff;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+/* Header Area CSS */
+
+.header-area {
+    padding: 45px 0;
+
+}
+
+/* .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo a {
+    text-decoration: none;
+
+}
+
+.logo h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.icon {
+    background-color: #3a2b71;
+    padding: 10px 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 40px;
+    transition: 0.3s;
+
+}
+
+.nav-menu a:hover {
+    background-color: #00c0ff;
+}
+
+/* Hero Area CSS */
+
+.hero-area {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-text h2 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-image img {
+
+    width: 100%;
+}
+
+
+/* About Area CSS */
+.about-area {
+    background-color: #1e1345;
+    padding: 100px 0;
+}
+
+.about-contetn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image img {
+    width: 100%;
+    padding-left: 70px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+
+/* Service Area CSS */
+.service-area {
+    padding: 100px 0;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.single-service {
+    background-color: #3a2b71;
+    padding: 30px;
+
+}
+
+.single-service h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Contact Area CSS */
+
+.contact-area {
+    background-color: #1e1345;
+    padding: 100px 0;
+
+}
+
+.conatct-contact form {
+    display: grid;
+    grid-template-areas:
+        "f l"
+        "e p"
+        "m m"
+        "s s";
+    gap: 15px;
+}
+
+#first-name {
+    grid-area: f;
+
+}
+
+#last-name {
+    grid-area: l;
+
+}
+
+#email-address {
+    grid-area: e;
+
+}
+
+#phone-number {
+    grid-area: p;
+
+}
+
+#message {
+    grid-area: m;
+
+}
+
+#send-message {
+    grid-area: s;
+    background-color: #3a2b71;
+    cursor: pointer;
+
+}
+
+.conatct-contact input {
+    font-size: 17px;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #3a2b71;
+    color: #ffffff;
+}
+
+.conatct-contact textarea {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #3a2b71;
+    color: #ffffff;
+}
+
+/* Footer Area */
+
+.footer-area {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #1e1345;
+    border: 1px solid #3a2b71;
+}
